@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-quiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+        
+        <title>CS 3 Quarter Project</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+        <style>
+            body {
+                font-family: 'Prompt', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html" class="mx-5">
+                        <img src="logoimg.png" alt="logoimg" width="50" class="mx-3 my-3">
+                        ValShop
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <ul class="navbar-nav">
+                            <li class="nav-item m-3">
+                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item m-3">
+                                <a class="nav-link" href="./about.html">About The Company</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center my-3">
+                    <h1>Vandal</h1>
+                </div>
+            </div>
+
+            </div>
+            <div class="row justify-content-evenly">
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top" src="champions.png" alt="champions">
+                        <div class="card-body">
+                            <h3 class="card-title">Champions 2021</h3>
+                            <p>2675 VP</p>
+                            <button class="btn btn-secondary" onclick="add1()">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top" src="prelude.png" alt="prelude">
+                        <div class="card-body">
+                            <h3 class="card-title">Prelude to Chaos</h3>
+                            <p>2175 VP</p>
+                            <button class="btn btn-secondary" onclick="add2()">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top" src="rgx.png" alt="rgx">
+                        <div class="card-body">
+                            <h3 class="card-title">RGX 11Z Pro</h3>
+                            <p>2175 VP</p>
+                            <button class="btn btn-secondary" onclick="add3()">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-evenly">
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top" src="araxys.png" alt="araxys">
+                        <div class="card-body">
+                            <h3 class="card-title">Araxys</h3>
+                            <p>2175 VP</p>
+                            <button class="btn btn-secondary" onclick="add4()">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top" src="gaia.png" alt="gaia">
+                        <div class="card-body">
+                            <h3 class="card-title">Gaia's Vengeance</h3>
+                            <p>1775 VP</p>
+                            <button class="btn btn-secondary" onclick="add5()">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top" src="elderflame.png" alt="elderflame">
+                        <div class="card-body">
+                            <h3 class="card-title">Elderflame</h3>
+                            <p>2475 VP</p>
+                            <button class="btn btn-secondary" onclick="add6()">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12 text-center my-3">
+                    <h1>Phantom</h1>
+                </div>
+            </div>
+
+            <div class="row justify-content-evenly">
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top" src="championsv2.png" alt="championsv2">
+                        <div class="card-body">
+                            <h3 class="card-title">Champions 2022</h3>
+                            <p>2675 VP</p>
+                            <button class="btn btn-secondary" onclick="add7()">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top" src="radiantes.png" alt="radiantes">
+                        <div class="card-body">
+                            <h3 class="card-title">Radiant Entertainment System</h3>
+                            <p>2975 VP</p>
+                            <button class="btn btn-secondary" onclick="add8()">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top" src="rgxv2.png" alt="rgxv2">
+                        <div class="card-body">
+                            <h3 class="card-title">RGX 11Z Pro</h3>
+                            <p>2175 VP</p>
+                            <button class="btn btn-secondary" onclick="add9()">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-evenly">
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top" src="recon.png" alt="recon">
+                        <div class="card-body">
+                            <h3 class="card-title">Recon</h3>
+                            <p>1775 VP</p>
+                            <button class="btn btn-secondary" onclick="add10()">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top" src="singularity.png" alt="singularity">
+                        <div class="card-body">
+                            <h3 class="card-title">Singularity</h3>
+                            <p>2175 VP</p>
+                            <button class="btn btn-secondary" onclick="add11()">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top" src="spectrum.png" alt="spectrum">
+                        <div class="card-body">
+                            <h3 class="card-title">Spectrum</h3>
+                            <p>2675 VP</p>
+                            <button class="btn btn-secondary" onclick="add12()">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center my-3">
+                    <h1>Operator</h1>
+                </div>
+            </div>
+
+            <div class="row justify-content-evenly">
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top" src="forsaken.png" alt="forsakem">
+                        <div class="card-body">
+                            <h3 class="card-title">Forsaken</h3>
+                            <p>1775 VP</p>
+                            <button class="btn btn-secondary" onclick="add13()">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top" src="cryo.png" alt="cryo">
+                        <div class="card-body">
+                            <h3 class="card-title">Cryostasis</h3>
+                            <p>1775 VP</p>
+                            <button class="btn btn-secondary" onclick="add14()">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top" src="rgxv3.png" alt="rgxv3">
+                        <div class="card-body">
+                            <h3 class="card-title">RGX 11Z Pro</h3>
+                            <p>2175 VP</p>
+                            <button class="btn btn-secondary" onclick="add15()">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row justify-content-evenly">
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top" src="sol.png" alt="sol">
+                        <div class="card-body">
+                            <h3 class="card-title">Sentinels of Light</h3>
+                            <p>2175 VP</p>
+                            <button class="btn btn-secondary" onclick="add16()">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top" src="gp.png" alt="gp">
+                        <div class="card-body">
+                            <h3 class="card-title">Glitchpop</h3>
+                            <p>2175 VP</p>
+                            <button class="btn btn-secondary" onclick="add17()">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top" src="elderflamev2.png" alt="elderflamev2">
+                        <div class="card-body">
+                            <h3 class="card-title">Elderflame</h3>
+                            <p>2475 VP</p>
+                            <button class="btn btn-secondary" onclick="add18()">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center my-3">
+                    <h1>Sheriff</h1>
+                </div>
+            </div>
+
+            <div class="row justify-content-evenly">
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top mx-auto" src="chrono.png" alt="chrono">
+                        <div class="card-body">
+                            <h3 class="card-title">Chronovoid</h3>
+                            <p>2175 VP</p>
+                            <button class="btn btn-secondary" onclick="add19()">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top mx-auto" src="singularityv2.png" alt="singularityv2">
+                        <div class="card-body">
+                            <h3 class="card-title">Singularity</h3>
+                            <p>2175 VP</p>
+                            <button class="btn btn-secondary" onclick="add20()">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top mx-auto mb-2" src="solv2.png" alt="solv2">
+                        <div class="card-body">
+                            <h3 class="card-title">Sentinels of Light</h3>
+                            <p>2175 VP</p>
+                            <button class="btn btn-secondary" onclick="add21()">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-evenly">
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top mx-auto" src="reaver.png" alt="reaver">
+                        <div class="card-body">
+                            <h3 class="card-title">Reaver</h3>
+                            <p>1775 VP</p>
+                            <button class="btn btn-secondary" onclick="add22()">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top mx-auto mb-2" src="magepunk.png" alt="magepunk">
+                        <div class="card-body">
+                            <h3 class="card-title">Magepunk</h3>
+                            <p>1775 VP</p>
+                            <button class="btn btn-secondary" onclick="add23()">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="card m-5 p-4" style="height:330px">
+                        <img class="card-img-top mx-auto mb-2" src="arcane.png" alt="arcane">
+                        <div class="card-body">
+                            <h3 class="card-title">Arcane</h3>
+                            <p>2337 VP</p>
+                            <button class="btn btn-secondary" onclick="add24()">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="card text-center my-3">
+                <div class="card-header">
+                    Your Cart
+                </div>
+                <div class="card-body py-3 px-5">
+                    <table class="table">
+                        <tbody id="cartmain"></tbody>
+                    </table>
+
+                    <div class="my-3">
+                        <p class="totaltextclass" id="total">Total: VP 0.00</p>
+                    </div>
+
+                    <form action="http://sirjm.infinityfreeapp.com/checkout.php" method="GET">
+                        <label for="deliverydetails" class="delidetails form-label">Delivery Details</label>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="deli1" style="width:5.5rem;">Name</span>
+                            <input type="text" class="form-control" id="deliverydetails" aria-describedby="deli1" name="cust_name">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="deli3" style="width:5.5rem">Email</span>
+                            <input type="text" class="form-control" id="deliverydetails2" aria-describedby="deli3" name="cust_email">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="deli2">Address</span>
+                            <input type="text" class="form-control" id="deliverydetails2" aria-describedby="deli2" name="cust_addr">
+                        </div>
+
+                        <input type="hidden" id="cust_order" name="cust_order">
+
+                        <div class="container-fluid mt-3">
+                            <button class="btn btn-primary" type="submit">Checkout</button>
+                        </div>
+                    
+                    </form>
+                </div>
+            </div> 
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+        <script>
+            var cart = [];
+            const cart2 = [];
+
+            function mainadd() {
+                var table = document.getElementById("cartmain");
+                table.innerHTML = "<tr><th>Item</th><th>Price</th><th>Remove</th></tr>";
+                const totaltext = document.getElementById("total");
+                var total = 0;
+                for (var i=0; i<cart.length; i++) {
+                    var item = cart[i].prod_name;
+                    var price = cart[i].prod_price;
+                    var row = table.insertRow(-1);
+                    var cell1 = row.insertCell(0);
+                    var cell2 = row.insertCell(1);
+                    var cell3 = row.insertCell(2);
+                    cell1.innerHTML = cart[i].prod_name;
+                    cell2.innerHTML = 'VP' + cart[i].prod_price;
+                    cell3.innerHTML = "<button onclick='removeitem(" + i + ")'>Remove</button>";
+                    total += parseInt(cart[i].prod_price);
+                    totaltext.innerHTML = `Total: VP ${total}.00`;
+                }
+                if (cart.length == 0) {
+                    totaltext.innerHTML = `0.00`;
+                }
+                const cust_order = document.getElementById("cust_order");
+                cart2.splice(i, 1)
+                cust_order.value = JSON.stringify(cart);  
+            }
+
+            function removeitem(index) {
+                cart.splice(index, 1);
+                mainadd();
+            }
+            function add1() {
+                const item = {
+                    prod_name: "Champions 2021 Vandal", prod_price: parseInt(2675)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add2() {
+                const item = {
+                    prod_name: "Prelude to Chaos Vandal", prod_price: parseInt(2175)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add3() {
+                const item = {
+                    prod_name: "RGX 11Z Pro Vandal", prod_price: parseInt(2175)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add4() {
+                const item = {
+                    prod_name: "Araxys Vandal", prod_price: parseInt(2175)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add5() {
+                const item = {
+                    prod_name: "Gaia's Vengeance Vandal", prod_price: parseInt(1775)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add6() {
+                const item = {
+                    prod_name: "Elderflame Vandal", prod_price: parseInt(2475)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add7() {
+                const item = {
+                    prod_name: "Champions 2022 Phantom", prod_price: parseInt(2675)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add8() {
+                const item = {
+                    prod_name: "Radiant Entertainment System Phantom", prod_price: parseInt(2975)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add9() {
+                const item = {
+                    prod_name: "RGX 11Z Pro Phantom", prod_price: parseInt(2175)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add10() {
+                const item = {
+                    prod_name: "Recon Phantom", prod_price: parseInt(1775)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add11() {
+                const item = {
+                    prod_name: "Singularity Phantom", prod_price: parseInt(2175)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add12() {
+                const item = {
+                    prod_name: "Spectrum Phantom", prod_price: parseInt(2675)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add13() {
+                const item = {
+                    prod_name: "Forsaken Operator", prod_price: parseInt(1775)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add14() {
+                const item = {
+                    prod_name: "Cryotasis Operator", prod_price: parseInt(1775)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add15() {
+                const item = {
+                    prod_name: "RGX 11Z Pro Operator", prod_price: parseInt(2175)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add16() {
+                const item = {
+                    prod_name: "Sentinels of Light Operator", prod_price: parseInt(2175)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add17() {
+                const item = {
+                    prod_name: "Glitchpop Operator", prod_price: parseInt(2175)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add18() {
+                const item = {
+                    prod_name: "Elderflame Operator", prod_price: parseInt(2475)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add19() {
+                const item = {
+                    prod_name: "Chronovoid Sheriff", prod_price: parseInt(2175)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add20() {
+                const item = {
+                    prod_name: "Singularity Sheriff", prod_price: parseInt(2175)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add21() {
+                const item = {
+                    prod_name: "Sentinels of Light Sheriff", prod_price: parseInt(2175)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add22() {
+                const item = {
+                    prod_name: "Reaver", prod_price: parseInt(1775)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add23() {
+                const item = {
+                    prod_name: "Magepunk Sheriff", prod_price: parseInt(1775)
+                }
+                cart.push(item)
+                mainadd()
+            }
+
+            function add24() {
+                const item = {
+                    prod_name: "Arcane", prod_price: parseInt(2773)
+                }
+                cart.push(item)
+                mainadd()
+            }
+        </script>
+    </body>
+    
+</html>
